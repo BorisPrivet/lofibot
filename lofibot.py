@@ -11,11 +11,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher()
 
-kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="> =", web_app=WebAppInfo(url='https://lofibot-github-io-spcp.vercel.app/'))]], resize_keyboard=True)
-# kb = ReplyKeyboardMarkup(keyboard=[KeyboardButton("> =", web_app=WebAppInfo('https://lofibot-github-io-spcp.vercel.app/'))])
-
-# btn = [InlineKeyboardButton(text="> =", web_app=WebAppInfo(url="https://lofibot-github-io-spcp.vercel.app/"))]
-# kb = InlineKeyboardMarkup().add(InlineKeyboardButton(text="> =", web_app=WebAppInfo(url="https://lofibot-github-io-spcp.vercel.app/")))
+kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="> =", web_app=WebAppInfo(url='https://lofibot-github-io.vercel.app/'))]], resize_keyboard=True)
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
