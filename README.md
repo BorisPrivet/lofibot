@@ -1,1 +1,1 @@
-# lofibot.github.io
+# lofibot
